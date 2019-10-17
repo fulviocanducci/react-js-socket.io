@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import socketClient from 'socket.io-client'
 const socket = new socketClient('http://localhost:3001');
 
-export function App() {
+export default function App() {
 
   const [message, setMessage] = useState('');
   const [list, setList] = useState([]);
@@ -57,5 +57,3 @@ export function App() {
     </>
   );
 }
-
-export default App;
